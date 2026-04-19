@@ -10,7 +10,7 @@ function SignUp() {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        await axios.post("http://localhost:8080/users/register",{
+        await axios.post("https://lost-found-3-5yj2.onrender.com/users/register",{
             name : name,
             email : email,
             password : password

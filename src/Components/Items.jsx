@@ -8,7 +8,7 @@ function Items() {
     const navigate = useNavigate();
     useEffect(() => {
         const fetchItems = async() => {
-            const response = await axios.get("http://localhost:8080/item");
+            const response = await axios.get("https://lost-found-3-5yj2.onrender.com/item");
             setItems(response.data);
         }
         fetchItems();

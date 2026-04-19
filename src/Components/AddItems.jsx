@@ -11,7 +11,7 @@ function AddItems() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            await axios.post("http://localhost:8080/item/add",{
+            await axios.post("https://lost-found-3-5yj2.onrender.com/item/add",{
                 name : name,
                 description : description,
                 location : location,
